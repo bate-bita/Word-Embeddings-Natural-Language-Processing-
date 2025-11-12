@@ -12,15 +12,15 @@ Text data is vast, unstructured, and complex. To interpret it effectively, analy
 This project builds and compares **Continuous Bag of Words (CBOW)** and **Skip-Gram** models to show how each learns contextual relationships in a movie-review corpus and how these insights can inform practical applications such as sentiment analysis and content categorisation.
 
 **Goal:** Transform text into structured numerical data that reflects linguistic and semantic relationships.  
-**Dataset:** IMDB Movie Review Dataset (50 000 reviews, evenly split into train / test).
+**Dataset:** IMDB Movie Review Dataset (50 000 reviews, evenly split into train / test).  
 **Embedding dimensions:** 50 – 300 dimensions.
 
 
 
 ## Dataset Summary
 
-- **Source:** IMDB Movie Review Dataset (Andrew Maas et al., 2011) 
-- **Type:** Unstructured text corpus for unsupervised learning  
+- **Source:** IMDB Movie Review Dataset (Andrew Maas et al., 2011).  
+- **Type:** Unstructured text corpus for unsupervised learning.  
 - **Focus:** Understanding how vector representations reflect sentiment and similarity among words.  
 
 
@@ -28,18 +28,18 @@ This project builds and compares **Continuous Bag of Words (CBOW)** and **Skip-G
 ## Approach
 
 **1. Data Preparation**  
-- Normalised and tokenised text, removing punctuation and low-frequency words  
-- Built context–target training pairs for model learning  
+- Normalised and tokenised text, removing punctuation and low-frequency words.  
+- Built context–target training pairs for model learning.  
 
 **2. Model Development**  
-- Implemented **CBOW** (predict target from context) and **Skip-Gram** (predict context from target)  
-- Trained on the review corpus using different window sizes and embedding dimensions  
-- Applied negative sampling to improve efficiency  
+- Implemented **CBOW** (predict target from context) and **Skip-Gram** (predict context from target).  
+- Trained on the review corpus using different window sizes and embedding dimensions.  
+- Applied negative sampling to improve efficiency.  
 
 **3. Evaluation & Visualisation**  
-- Measured cosine similarity to evaluate learned relationships  
-- Reduced dimensions with **PCA** and **t-SNE** to visualise clusters  
-- Explored vector arithmetic examples (e.g., *king – man + woman ≈ queen*) to interpret relationships  
+- Measured cosine similarity to evaluate learned relationships.  
+- Reduced dimensions with **PCA** and **t-SNE** to visualise clusters.  
+- Explored vector arithmetic examples (e.g., *king – man + woman ≈ queen*) to interpret relationships.  
 
 
 
@@ -58,8 +58,8 @@ This project builds and compares **Continuous Bag of Words (CBOW)** and **Skip-G
 
 ## Tools and Techniques  
 
-- **Languages & Libraries:** Python, TensorFlow, NumPy, Pandas, Matplotlib, Scikit-learn  
-- **Analytical Skills:** Text preprocessing, analytical thinking, similarity analysis, result interpretation, data visualisation, data storytelling, dimensionality reduction.
+- **Languages & Libraries:** Python, TensorFlow, NumPy, Pandas, Matplotlib, Scikit-learn.  
+- **Analytical Skills:** Text preprocessing, analytical thinking, similarity analysis, result interpretation, data visualisation, data storytelling, dimensionality reduction.  
 
 
 
@@ -75,4 +75,3 @@ It strengthens the ability to interpret unstructured data, derive sentiment tren
 👩🏽‍💻 **Bate Bita Tambe**  
 Business and Data Analyst  
 [LinkedIn](https://www.linkedin.com/in/bate-bita-tambe-a29ab6221)
-
