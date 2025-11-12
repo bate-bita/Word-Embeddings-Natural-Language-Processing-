@@ -4,7 +4,7 @@ This project explores how Word2Vec models capture meaning and similarity between
 
 📊 [Word2Vec Presentation](https://pitch.com/v/word-embeddings---word2vec-ndreji)
 
----
+
 
 ## Project Overview
 
@@ -15,7 +15,7 @@ By comparing **Continuous Bag of Words (CBOW)** and **Skip-Gram**, the analysis 
 **Dataset:** Movie review corpus (cleaned and tokenised text)  
 **Embedding dimensions:** 50–300  
 
----
+
 
 ## Dataset Summary
 
@@ -23,7 +23,7 @@ By comparing **Continuous Bag of Words (CBOW)** and **Skip-Gram**, the analysis 
 - Type: Text corpus for unsupervised learning  
 - Features include: tokenised sentences, context windows, and target words  
 
----
+
 
 ## Approach
 
@@ -40,7 +40,7 @@ By comparing **Continuous Bag of Words (CBOW)** and **Skip-Gram**, the analysis 
 - Applied **PCA** and **t-SNE** for dimensionality reduction  
 - Visualised word clusters to show context relationships  
 
----
+
 
 ## Key Findings
 
@@ -53,21 +53,21 @@ By comparing **Continuous Bag of Words (CBOW)** and **Skip-Gram**, the analysis 
 - Skip-Gram demonstrated stronger performance for rare terms, while CBOW excelled with common words.  
 - Dimensionality reduction revealed interpretable patterns such as sentiment polarity and thematic grouping.  
 
----
+
 
 ## Tools and Techniques
 
 - **Languages & Libraries:** Python, Gensim, NumPy, Pandas, Matplotlib, Scikit-learn  
 - **Skills Demonstrated:** Text preprocessing, analytical thinking, neural embeddings, vector similarity, dimensionality reduction, data visualisation  
 
----
+
 
 ## Outcome
 
 This project demonstrates how machine learning can extract meaning from unstructured language and convert it into quantifiable insights.  
-It strengthens interpretive and analytical skills in NLP — bridging the gap between technical model results and their real-world implications.
+It strengthens interpretive and analytical skills in NLP, bridging the gap between technical model results and their real-world implications.
 
----
+
 
 ## Author
 
