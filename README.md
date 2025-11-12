@@ -1,6 +1,6 @@
 # Word Embeddings (Natural Language Processing)
 
-This project explores how Word2Vec models capture meaning and similarity between words by learning from context. Using **CBOW** and **Skip-Gram** architectures, the analysis visualises semantic relationships in vector space and demonstrates how these embeddings power modern Natural Language Processing.
+This project explores how words can be represented as numerical vectors to uncover meaning and similarity within text. Using **Word2Vec** architectures (**CBOW** and **Skip-Gram**), the analysis demonstrates how context defines meaning and how these representations support real-world text analytics.
 
 📊 [Word2Vec Presentation](https://pitch.com/v/word-embeddings---word2vec-ndreji)
 
@@ -8,69 +8,71 @@ This project explores how Word2Vec models capture meaning and similarity between
 
 ## Project Overview
 
-Text data is unstructured by nature — full of nuance and ambiguity. This project investigates how neural network–based embeddings transform words into numerical vectors that retain their semantic relationships.  
-By comparing **Continuous Bag of Words (CBOW)** and **Skip-Gram**, the analysis highlights how context defines meaning and how embeddings underpin NLP applications like sentiment analysis, topic modelling, and search relevance.
+Text data is vast, unstructured, and complex. To interpret it effectively, analysts rely on numerical representations that capture relationships between words.  
+This project builds and compares **Continuous Bag of Words (CBOW)** and **Skip-Gram** models to show how each learns contextual relationships in a movie-review corpus and how these insights can inform practical applications such as sentiment analysis and content categorisation.
 
-**Goal:** Build and interpret Word2Vec embeddings that represent semantic similarity.  
-**Dataset:** Movie review corpus (cleaned and tokenised text)  
-**Embedding dimensions:** 50–300  
+**Goal:** Transform text into structured numerical data that reflects linguistic and semantic relationships.  
+**Dataset:** IMDB Movie Review Dataset (50 000 reviews, evenly split into train / test).
+**Embedding dimensions:** 50 – 300 dimensions.
 
 
 
 ## Dataset Summary
 
-- Source: Publicly available movie reviews dataset used for educational NLP tasks  
-- Type: Text corpus for unsupervised learning  
-- Features include: tokenised sentences, context windows, and target words  
+- **Source:** IMDB Movie Review Dataset (Andrew Maas et al., 2011) 
+- **Type:** Unstructured text corpus for unsupervised learning  
+- **Focus:** Understanding how vector representations reflect sentiment and similarity among words.  
 
 
 
 ## Approach
 
-**1. Text Preprocessing**  
-- Normalised text: lowercased, removed punctuation, tokenised  
-- Filtered out stopwords and low-frequency tokens  
+**1. Data Preparation**  
+- Normalised and tokenised text, removing punctuation and low-frequency words  
+- Built context–target training pairs for model learning  
 
 **2. Model Development**  
-- Implemented **CBOW** (predict target from context) and **Skip-Gram** (predict context from target) using Word2Vec  
-- Tuned vector size, window length, and negative sampling  
+- Implemented **CBOW** (predict target from context) and **Skip-Gram** (predict context from target)  
+- Trained on the review corpus using different window sizes and embedding dimensions  
+- Applied negative sampling to improve efficiency  
 
 **3. Evaluation & Visualisation**  
-- Measured word similarity with cosine distance  
-- Applied **PCA** and **t-SNE** for dimensionality reduction  
-- Visualised word clusters to show context relationships  
+- Measured cosine similarity to evaluate learned relationships  
+- Reduced dimensions with **PCA** and **t-SNE** to visualise clusters  
+- Explored vector arithmetic examples (e.g., *king – man + woman ≈ queen*) to interpret relationships  
 
 
 
-## Key Findings
+## Key Insights
 
-| Model | Strengths | Best Use Case |
-|:------|:-----------|:--------------|
-| **CBOW** | Faster to train, captures frequent word contexts well | Large datasets with balanced vocabulary |
-| **Skip-Gram** | Captures rare-word relationships, deeper contextual understanding | Smaller or imbalanced corpora |
+| Model | Strengths | Ideal Scenario |
+|:------|:-----------|:---------------|
+| **CBOW** | Fast and stable, captures general context effectively | Larger balanced datasets |
+| **Skip-Gram** | Learns nuanced relationships and rare terms | Smaller or imbalanced corpora |
 
-- Both models learn intuitive clusters — words with similar meanings are positioned close in vector space.  
-- Skip-Gram demonstrated stronger performance for rare terms, while CBOW excelled with common words.  
-- Dimensionality reduction revealed interpretable patterns such as sentiment polarity and thematic grouping.  
-
-
-
-## Tools and Techniques
-
-- **Languages & Libraries:** Python, Gensim, NumPy, Pandas, Matplotlib, Scikit-learn  
-- **Skills Demonstrated:** Text preprocessing, analytical thinking, neural embeddings, vector similarity, dimensionality reduction, data visualisation  
+- Both models produced clear thematic clusters separating positive, negative, and neutral terms.  
+- Skip-Gram provided richer insight into less-frequent words, supporting more detailed sentiment segmentation.  
+- The results illustrate how numerical embeddings translate qualitative text into patterns analysts can measure and act on.  
 
 
 
-## Outcome
+## Tools and Techniques  
 
-This project demonstrates how machine learning can extract meaning from unstructured language and convert it into quantifiable insights.  
-It strengthens interpretive and analytical skills in NLP, bridging the gap between technical model results and their real-world implications.
+- **Languages & Libraries:** Python, TensorFlow, NumPy, Pandas, Matplotlib, Scikit-learn  
+- **Analytical Skills:** Text preprocessing, analytical thinking, similarity analysis, result interpretation, data visualisation, data storytelling, dimensionality reduction.
 
 
 
-## Author
+## Outcome  
+
+The project bridges language and analytics by turning text into measurable vectors that reveal meaning at scale.  
+It strengthens the ability to interpret unstructured data, derive sentiment trends, and explain how context influences language, which are essential capabilities for business and data analytics roles.  
+
+
+
+## Author  
 
 👩🏽‍💻 **Bate Bita Tambe**  
 Business and Data Analyst  
 [LinkedIn](https://www.linkedin.com/in/bate-bita-tambe-a29ab6221)
+
