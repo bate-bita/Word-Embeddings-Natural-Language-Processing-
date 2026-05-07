@@ -73,5 +73,5 @@ It strengthens the ability to interpret unstructured data, derive sentiment tren
 ## Author  
 
 👩🏽‍💻 **Bate Bita Tambe**  
-Financial and Business Intelligence Analyst  
+Data Analyst  
 [LinkedIn](https://www.linkedin.com/in/bate-bita-tambe-a29ab6221)
